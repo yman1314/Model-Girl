@@ -1,0 +1,63 @@
+@import '@/qunar/reset.scss';
+
+.cpage{
+    width: 100%;
+    height: 100%;
+    @include flexbox();
+    flex: 1 1;
+    flex-direction: column;
+    background-color: rgba(243, 236, 236, 0.541);
+    overflow: auto;
+    .cheader{
+        width: 100%;
+        height: 0.44rem;
+        background-color: #f688;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.1rem 0.2rem;
+        border-radius: 0 0 0.04rem 0.04rem;
+        text-align: center;
+        color:#fff;
+        .tc{
+            margin: 0 auto;
+            font-size: .16rem;
+        }
+    }
+    ul{
+        padding: 0.1rem 0;
+        li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           // padding:0 .1rem;
+            margin: .01rem .1rem;
+            border-bottom: .01rem solid rgba(163, 142, 147, 0.533);
+            // background-color: #fff;
+            .left{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                img{
+                    width: .4rem;
+                    height: .4rem;
+                    border-radius: 50%;
+                    margin: .1rem;
+                }
+            }
+            .right{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+    .c-b{
+        text-align: center;
+        margin-top: .5rem;
+        font-size: .14rem;
+        color: grey;
+    }
+}

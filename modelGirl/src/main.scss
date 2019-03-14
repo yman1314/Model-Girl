@@ -1,0 +1,40 @@
+@import '@/qunar/reset.scss';
+html, body, #root, .box {
+  @include rect(100%, 100%);
+}
+
+.box {
+  @include flexbox();
+  @include flex-direction(column);
+  // .header {
+  //   @include rect(100%, 0.44rem);
+  //   @include background-color(#f66);
+  // }
+  // .content {
+  //   @include flex();
+  //   @include rect(100%, auto);
+  //   @include overflow();
+  // }
+  .footer {
+    // @include fullscreen(2, fixed);
+    // @include setposition(auto, auto, 0, auto);
+    @include rect(100%, 0.5rem);
+    @include background-color(rgba(243, 236, 236, 0.541));
+    ul {
+      @include rect(100%, 100%);
+      @include flexbox();
+      a {
+        @include flex();
+        @include rect(auto, 100%);
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+        @include color(rgb(94, 88, 88));
+
+        &.active {
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+}

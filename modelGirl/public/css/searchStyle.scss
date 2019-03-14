@@ -1,0 +1,112 @@
+@import '@/qunar/reset.scss';
+@import '@/qunar/public.scss';
+
+.searchContainer{
+  @include background-color(#fff);
+  @include overflow(hidden);
+  @include rect(100%, 100%);
+  @include flexbox();
+  @include flex-direction(column);
+  .header{
+    position: relative;
+    @include background-color(rgba(241, 241, 241, 0.568));
+    // @include setRgba(255, 255, 255, 0);
+    @include rect(100%, 0.44rem);
+    // @include fullscreen(1,fixed);
+    // @include setposition(0, auto, auto, auto);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include text-align();
+    .left{
+      position: absolute;
+      left: 2%;
+      @include border-radius(50%);
+      @include rect(0.4rem, 90%);
+      // @include flex();
+      @include overflow(hidden);
+      img{
+        @include rect(auto, 100%);
+      }
+    }
+    .right{
+      @include flex();
+      // @include margin(0.08rem 0 0 0);   
+      a{
+        @include font-size(0.16rem);
+        @include color(rgb(122, 117, 117));
+        @include padding(0 0.1rem);
+        &.active {
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+  .searchContent{
+    // @include flex();
+    @include rect(100%, auto);
+    @include overflow(hidden);
+    @include flexbox();
+    @include align-items();
+    @include flex-direction(column);
+    .top{
+      @include rect(100%, auto);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include margin(0 0 0.2rem 0);
+      form.am-search{
+        @include rect(90%, auto);
+        @include padding(0);
+        @include background-color(#fff);
+        .am-search-input{
+          @include background-color(rgba(241, 241, 241, 0.568));
+          @include border-radius(0.2rem);
+          // @include rect(100%, 0.3rem);
+          @include text-align();
+          .am-search-synthetic-ph{
+            @include text-align();
+          }
+        }
+      }
+    }
+    div.bott{
+      // @include margin(0.1rem 0.1rem 0.1rem 0.1rem);
+      @include rect(90%, auto);
+      .ccen{
+        @include rect(100%, auto);
+        @include border-radius(0.1rem);
+        @include margin(0 0 0.3rem 0);
+        @include background-color(rgba(241, 241, 241, 0.568));
+        h3{
+          @include flexbox();
+          @include justify-content(space-between);
+          @include padding(0.1rem 0.2rem);
+          @include font-size(0.18rem);
+          @include color(rgb(90, 80, 80));
+          span:nth-child(2){
+            @include color(rgb(126, 122, 122));
+          }
+        }
+        ul{
+          @include flexbox();
+          @include padding(0 0.2rem 0.1rem 0.2rem);
+          @include flex-flow(wrap);
+          li{
+            @include padding(0.02rem 0.1rem);
+            @include border-radius(0.2rem);
+            @include background-color(rgba(255, 102, 136, 0.533));
+            @include margin(0.1rem 0.1rem 0 0);
+            @include color(#fff);
+          }
+        }
+        ul.te{
+          li{
+            @include background-color(rgb(209, 204, 204));
+            @include color(#000);
+          }
+        }
+      }
+    }
+  }
+}

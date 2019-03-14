@@ -1,0 +1,192 @@
+@import '@/qunar/reset.scss';
+.resultContainer{
+  @include background-color(#fff);
+  @include overflow(hidden);
+  @include rect(100%, 100%);
+  @include flexbox();
+  @include flex-direction(column);
+  .header{
+    @include rect(100%, 0.44rem);
+    @include background-color(rgba(255, 102, 136, 0.533));
+    @include flexbox();
+    @include justify-content(space-between);
+    // @include align-items();
+    @include padding(0.1rem 0.2rem);
+    @include border-radius(0 0 0.04rem 0.04rem);
+    span{
+      @include text-align();
+      @include color(#fff);
+      @include font-size(0.18rem);
+    }
+  }
+  .content{
+    @include flex();
+    @include rect(100%, 100%);
+    @include overflow(hidden);
+    div.scontent{
+      // @include flex();
+      @include rect(100%, 100%);
+      @include overflow();
+      ul.scen{
+        @include margin(0.1rem 0 0 0);
+        @include padding(0 2% 1% 2%);
+        @include rect(100%, auto);
+        @include overflow();
+        @include flexbox();
+        @include flex-flow(wrap);
+        @include background-color(#fff);
+        a.li{
+          display: block;
+          @include box-sizing(content-box);
+          @include padding(1%);
+          @include border-radius(0.06rem);
+          // @include border(0 0 1px 0, rgb(196, 190, 190), solid);
+          @include background-color(rgba(243, 236, 236, 0.541));
+          @include margin(0 1% 0.1rem 1%);
+          @include rect(46%, auto);
+          // @include text-align();
+          div.out{
+            @include margin(0 auto);
+            @include background-color(#fff);
+            @include rect(100%, 1.6rem);
+            img{
+              display: block;
+              @include rect(100%, 1.6rem);
+            }
+          }
+          p{
+            @include font-size(0.16rem);
+            @include color(#000);
+            @include font-weight(500);
+            @include text-align(left);
+            @include rect(100%, 0.76rem);
+            @include padding(0.06rem 0.08rem 0.02rem 0.1rem);
+            @include overflow(hidden);
+            word-break:break-all;
+          }
+          div.left{
+            @include flexbox();
+            @include padding(0.1rem 4%);
+            @include justify-content(space-between);
+            @include align-items();
+            span:nth-child(1){
+              // @include rect(30%, auto);
+              @include font-size(0.18rem);
+              @include color(rgba(255, 102, 136, 0.533));
+            }
+            span:nth-child(2){
+              @include text-align();
+              vertical-align: middle;
+              @include font-size(0.1rem);
+              // @include margin(0 0 0 0.16rem);
+              @include border-radius(0.12rem);
+              @include padding(0.04rem 0.08rem);
+              @include color(#fff);
+              // @include rect(57%, auto);
+              @include setText-overflow();
+              @include background-color(rgba(255, 102, 136, 0.533));
+            }
+          }
+        }
+      }
+    }  
+    div.out{
+      // @include flex();
+      @include rect(100%, 100%);
+      @include overflow();
+      ul.findReCen{
+        @include margin(0.1rem 0 0 0);
+        @include padding(0 2%);
+        @include rect(100%, auto);
+        @include overflow();
+        @include flexbox();
+        @include flex-flow(wrap);
+        @include overflow();
+        li.li{
+          display: block;
+          @include padding(1% 1%);
+          @include border-radius(0.05rem 0.05rem 0 0);
+          @include background-color(rgba(243, 236, 236, 0.541));
+          @include margin(0 1% 0.1rem 1%);
+          @include rect(48%, 2.5rem);
+          @include text-align();
+          &.active {
+            @include color(rgba(255, 102, 136, 0.533));
+          }
+          a.view{
+            display: block;
+            @include rect(100%, 1.7rem);
+            @include margin(0 auto);
+            img{
+              @include rect(100%, 100%);
+            }
+          }
+          h3{
+            @include font-weight(500);
+            @include font-size(0.16rem);
+            @include color(rgb(122, 117, 117));
+            @include text-align(left);
+            @include padding(0.1rem 0 0.08rem 0.1rem);
+            @include rect(90%, auto);
+            @include setText-overflow();
+          }
+          div.bott{
+            @include padding(0 0.12rem 0.08rem 0.12rem);
+            @include rect(100%, 0.42rem);
+            @include flexbox();
+            div.left{
+              @include rect(60%, 0.3rem);
+              @include flexbox();
+              // @include border-radius(50%);
+              // @include overflow(hidden);
+              img{
+                @include rect(0.3rem, 0.3rem);
+                @include border-radius(50%);
+              }
+              p{
+                @include font-size(0.14rem);
+                @include line-height(200%);
+                @include color(rgb(122, 117, 117));
+                @include padding(0.06rem 0 0 0);
+                @include margin(0 0 0 0.1rem);
+                @include rect(100%, auto);
+                @include setText-overflow();
+                word-break:break-all;
+              }      
+            }
+            div.right{
+              @include text-align(right);
+              @include flex();
+              @include margin(0.05rem 0 0.1rem 0);
+              span{
+                @include font-size(0.18rem);
+                @include color(rgb(122, 117, 117));
+                @include padding(0.05rem 0.1rem 0 0);
+              }      
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    // @include fullscreen(2, fixed);
+    // @include setposition(auto, auto, 0, auto);
+    @include rect(100%, 0.5rem);
+    @include background-color(#eee);
+    ul {
+      @include rect(100%, 100%);
+      @include flexbox();
+      a {
+        @include flex();
+        @include rect(auto, 100%);
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+        &.active {
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+}

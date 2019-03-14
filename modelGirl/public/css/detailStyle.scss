@@ -1,0 +1,124 @@
+@import '@/qunar/reset.scss';
+
+.detailContainer{
+  @include rect(100%, 100%);
+  @include background-color(rgba(233, 10, 10, 0.096));
+  .header{
+    @include flexbox();
+    @include rect(100%, 0.5rem);
+    @include justify-content(space-between);
+    @include padding(0.1rem 0.2rem);
+    @include fullscreen(2, fixed);
+    span{
+      @include font-size(0.2rem);
+      @include color(#000);
+    }
+  }
+  .content{
+    .top{
+      img{
+        @include rect(100%, 3rem);
+      }
+    }
+    .center{
+      @include border(0 0 1px 0,rgb(252, 6, 6),dashed);
+      @include margin(0.1rem 0);
+      @include padding(0 0.2rem 0.1rem 0.2rem);
+      @include rect(100%, 0.6rem);
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items();
+      .lt{
+        @include font-size(0.2rem);
+        @include color(#f00);
+        p:nth-child(2){
+          @include color(#f00);
+          @include font-size(0.16rem);
+        }
+      }
+      span{
+        display: block;
+        @include rect(1px, 100%);
+        @include border(0 1px 0 0, rgb(241, 104, 104), dashed);
+        @include font-size(0.2rem);
+        @include margin(0 0 0 0.6rem);
+      }
+      .rt{
+        @include text-align();
+        @include border-radius(0.1rem);
+        @include background-color(rgb(253, 77, 77));
+        @include padding(0.02rem 0.08rem);
+        p{
+          @include font-size(0.14rem);
+          @include color(#fff);
+        }
+      }
+    }
+    h3{
+      @include font-size(0.18rem);
+      @include font-weight(500);
+      @include color(rgb(99, 94, 94));
+      @include padding(0.05rem 0.2rem);
+    }
+    .bottom{
+      @include padding(0.1rem 0.2rem);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include color(rgba(255, 102, 136, 0.533));
+      .lt1{
+        @include margin(0 0.2rem 0 0);
+        @include padding(0.04rem 0.4rem);
+        @include background-color(#fff);
+        @include border-radius(0.2rem);
+        span:nth-child(1){
+          @include padding(0 0.1rem 0 0);
+        }
+      }
+      .rt1{
+        // @include margin(0 0.5rem 0 0);
+        @include padding(0.04rem 0.4rem);
+        @include background-color(#fff);
+        @include border-radius(0.2rem);
+        span:nth-child(1){
+          @include padding(0 0.1rem 0 0);
+        }
+      }
+    }
+    .bott{
+      @include fullscreen(2, fixed);
+      @include setposition(auto, auto, 0, auto);
+      @include flexbox();
+      @include rect(100%, 0.5rem);
+      @include justify-content(space-between);
+      @include align-items();
+      @include font-size(0.16rem);
+      @include background-color(#fff);
+      @include padding(0 0.1rem);
+      div.te{
+        // @include flex(1);
+        @include margin(0 0.16rem 0 0);
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items();
+        span{
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+        span:nth-child(2){
+          @include font-size(0.12rem);
+        }
+      }
+      span.add,span.buy{
+        @include flex(2);
+        @include text-align();
+        @include background-color(rgba(255, 102, 136, 0.533));
+        @include border-radius(0.2rem);
+        @include color(#fff);
+        @include padding(0.04rem 0.05rem);
+      }
+      span.add{
+        @include margin(0 0.1rem 0 0.2rem);
+      }
+    }
+  }
+}

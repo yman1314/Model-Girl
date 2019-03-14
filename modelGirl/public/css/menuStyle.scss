@@ -1,0 +1,105 @@
+@import '@/qunar/reset.scss';
+div.view{
+  @include rect(100%, 100%);
+  div.outer{
+    @include flexbox();
+    @include flex-direction();
+    // @include overflow(hidden);
+    @include rect(100%, 100%);
+    .menuContainer{
+      @include background-color(#fff);
+      @include rect(78%, 100%);
+      @include flexbox();
+      @include flex-direction(column);
+      @include padding(0.5rem 0.2rem);
+      .header{
+        // position: relative;
+        @include rect(100%, auto);
+        @include flexbox();
+        // @include justify-content();
+        @include align-items();
+        @include padding(0 0 0.2rem 0);
+        @include border(0 0 1px 0, #ccc, double);
+        @include margin(0 0 0.2rem 0);
+        .out{
+          // position: absolute;
+          // left: 2%;
+          @include border-radius(50%);
+          @include rect(0.8rem, 90%);
+          // // @include flex();
+          @include overflow(hidden);
+          @include margin(0 0 0 0.2rem);
+          img{
+            @include rect(0.8rem, 0.8rem);
+          }
+        }
+        span{
+          display: inline-block;
+          @include font-size(0.18rem);
+          @include margin(0 0 0 0.3rem);
+        }
+      }
+      .content{
+        @include flex();
+        @include rect(100%, 100%);
+        @include background-color(#fff);
+        @include overflow();
+        div.view{
+          // @include overflow();
+          @include rect(100%, 100%);
+          ul:nth-child(3){
+            li:last-child{
+              @include rect(100%, auto);
+              @include color(#fff);
+              @include text-align();
+              @include background-color(rgba(255, 102, 136, 0.533));
+            }
+          }
+          ul{
+            @include padding(0 0 0.3rem 0);
+            li{
+              @include padding(0.16rem 0.1rem);
+              // @include background-color(#eee);
+              @include color(#000);
+              @include border(0 0 1px 0, #ccc, solid);
+              @include flexbox();
+              // @include justify-content(space-between);
+              @include align-items();
+              span:nth-child(1){
+                @include flex(1)
+              }
+              span:nth-child(2){
+                @include flex(8)
+              }
+              span:nth-child(3){
+                @include flex(1)
+              }
+            }
+            a{
+              @include padding(0.16rem 0.1rem);
+              // @include background-color(#eee);
+              @include border(0 0 1px 0, #ccc, solid);
+              @include color(#000);
+              @include flexbox();
+              // @include justify-content(space-between);
+              @include align-items();
+              span:nth-child(1){
+                @include flex(1)
+              }
+              span:nth-child(2){
+                @include flex(8)
+              }
+              span:nth-child(3){
+                @include flex(1)
+              }
+            }
+          }
+        }
+      }
+    }
+    div.aside{
+      @include flex();
+      @include background-color(rgba(243, 236, 236, 0.541));
+    }
+  }
+}

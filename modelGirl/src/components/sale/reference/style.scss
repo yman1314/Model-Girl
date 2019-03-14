@@ -1,0 +1,161 @@
+@import '@/qunar/reset.scss';
+div.rout{
+  @include rect(100%, 100%);
+  @include overflow();
+  div.ban{
+    @include rect(100%, 1.2rem);
+    .am-carousel{
+      @include rect(92%, 1.2rem);
+    }
+    div.top{
+      @include rect(92%, 1.2rem);
+      @include margin(0 auto);
+      @include border-radius(0.08rem);
+      @include overflow(hidden);
+      img.imgs{
+        @include rect(100%, 1.2rem);
+      }
+    }
+  }
+  div.ad{
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items();
+    @include background-color(rgba(243, 236, 236, 0.541));
+    @include border-radius(0.08rem);
+    @include margin(0.1rem 0.16rem);
+    @include padding(0.1rem 0.2rem);
+    img{
+      @include rect(0.66rem, 0.66rem);
+    }
+    div.center{
+      p{
+        @include font-size(0.16rem);
+        @include color(#000);
+        @include text-align();
+      }
+    }
+    div.left{
+      @include rect(0.66rem, 0.66rem);
+      @include background-color(rgba(255, 102, 136, 0.533));
+      @include border-radius(50%);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      span{
+        @include font-size(0.16rem);
+        @include color(#fff);
+      }
+    }
+  }
+  ul.scenter{
+    // @include margin(0.2rem 0 0 0);
+    @include padding(0 2% 9% 2%);
+    @include rect(100%, auto);
+    // @include overflow();
+    @include flexbox();
+    @include flex-flow(wrap);
+    @include background-color(#fff);
+    a.li{
+      display: block;
+      @include box-sizing(border-box);
+      @include margin(0 1% 0.1rem);
+      @include padding(2% 0);
+      @include border-radius(0.06rem);
+      @include background-color(rgba(243, 236, 236, 0.541));
+      // @include margin(0.1rem 0 0 0);
+      @include rect(48%, auto);
+      @include text-align();
+      img{
+        @include rect(1.6rem, 1.6rem);
+      }
+      p{
+        @include font-size(0.16rem);
+        @include color(#000);
+        @include font-weight(500);
+        @include text-align(left);
+        @include rect(auto, 0.76rem);
+        @include overflow(hidden);
+        @include padding(0.06rem 0.08rem 0.02rem 0.1rem);
+        word-break:break-all;
+      }
+      div.left{
+        @include flexbox();
+        @include padding(0.1rem 4%);
+        @include justify-content(space-between);
+        @include align-items();
+        span:nth-child(1){
+          // @include rect(30%, auto);
+          @include font-size(0.18rem);
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+        span:nth-child(2){
+          @include text-align();
+          vertical-align: middle;
+          @include font-size(0.1rem);
+          // @include margin(0 0 0 0.16rem);
+          @include border-radius(0.12rem);
+          @include padding(0.04rem 0.08rem);
+          @include color(#fff);
+          // @include rect(57%, auto);
+          @include setText-overflow();
+          @include background-color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+  ul.stop{
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include padding(0 2%);
+    li{
+      @include padding(0 0.12rem 0.12rem 0.12rem);
+      @include background-color(rgba(243, 236, 236, 0.541));
+      @include margin(0 0.05rem);
+      @include rect(46%, auto);
+      @include border-radius(0.08rem);
+      p{
+        @include font-size(0.16rem);
+        @include padding(0.08rem 0);
+        @include color(rgba(255, 102, 136, 0.533));
+        @include text-align();
+        @include setText-overflow();
+      }
+      div.sout{
+        @include flexbox();
+        @include justify-content(space-between);
+        img{
+          @include rect(0.6rem, 0.6rem);
+          @include margin(0 0.056rem);
+        }
+      }
+    }
+  }
+  ul.recenter{
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include margin(0.1rem 0 0.1rem 0);
+    @include rect(100%, auto);
+    li{
+      @include padding(0 0 0.12rem 0);
+      @include rect(26%, auto);
+      @include background-color(rgba(243, 236, 236, 0.541));
+      @include margin(0 0.16rem);
+      @include text-align();
+      @include border-radius(0.08rem);
+      p{
+        @include font-size(0.16rem);
+        @include padding(0.05rem 0.05rem);
+        @include color(rgba(255, 102, 136, 0.533));
+        @include font-size(0.14rem);
+        @include setText-overflow();
+      }
+      img{
+        @include rect(0.6rem, 0.6rem);
+      }
+    }
+  }
+}
+

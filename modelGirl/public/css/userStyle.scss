@@ -1,0 +1,143 @@
+@import '@/qunar/reset.scss';
+.content{
+    @include rect(100%, 100%);
+    // position: relative;
+    .user{
+        @include rect(100%, 100%);
+        @include flexbox();
+        @include flex-direction(column);
+        @include background-color(rgba(243, 236, 236, 0.541));
+        .userheader{
+            @include rect(100%, 0.44rem);
+            @include background-color(rgba(255, 102, 136, 0.533));
+            @include flexbox();
+            @include justify-content(space-between);
+            // @include align-items();
+            @include padding(0.1rem 0.2rem);
+            @include border-radius(0 0 0.04rem 0.04rem);
+            span{
+            @include text-align();
+            @include color(#fff);
+            @include font-size(0.18rem);
+            }
+            // span:nth-child(1){
+            //   @include flex(1);
+            //   @include text-align(left);
+            //   @include margin(0 0 0 0.1rem);
+            // }
+            span:nth-child(2){
+            @include font-size(0.18rem);
+            }
+            div.nickname{
+                @include flexbox();
+                @include flex-direction(column);
+                span{
+                    @include font-size(0.12rem);
+                }
+            }
+        }
+        .top{
+            @include flexbox();
+            @include padding(0.2rem 0.16rem);
+            .lt{
+                @include flexbox();
+                img{
+                    @include rect(0.8rem, 0.8rem);
+                    @include border-radius(50%);
+                }
+            }
+            .rt{
+                @include flex();
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content();
+                @include text-align();
+                ul{
+                    @include padding(0 0 0.1rem 0);
+                    // @include flex();
+                    @include flexbox();
+                    li{
+                        @include flex();
+                    }
+                }
+                .int{
+                    display: block;
+                    margin: 0 auto;
+                    @include rect(54%, 0.2rem);
+                    @include border-radius(0.1rem);
+                    @include background-color(rgb(231, 222, 222));
+                    @include text-align();
+                    @include font-size(0.14rem);
+                }
+            }
+        } 
+        .autograph{
+            // @include flex();
+            // @include flexbox();
+            // @include justify-content();
+            // @include text-align();
+            @include rect(84%, 0.3rem);
+            @include margin(0.1rem 0.16rem);
+            @include padding(2%);
+            border: none;
+            @include border(1px,#ccc,solid);
+            @include border-radius(0.05rem);
+        }
+        .bott{
+            @include flexbox();
+            @include justify-content();
+            @include align-items();
+            .lt{
+            @include flexbox();
+            @include flex-direction(column);
+            @include align-items();
+            @include padding(0 0.1rem); 
+            }
+        }
+    }
+    .bbottom{
+        position: fixed;
+        z-index:10;
+        transition: .2s all;
+        bottom:-1.86rem;
+        @include rect(100%, auto);
+        @include text-align();
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+        @include flex-direction(column);
+        @include font-size(0.16rem);
+        @include background-color(#fff);
+        a{
+            @include color(rgb(117, 110, 110));
+            @include rect(100%, auto);
+            @include padding(0.16rem);
+            @include border(0 0 2px 0, rgb(172, 165, 165), solid);
+        }
+        li{
+            @include color(#ccc);
+            @include color(rgb(117, 110, 110));
+            @include padding(0.16rem);
+        }
+    }
+    .footer {
+        @include fullscreen(2, fixed);
+        @include setposition(auto, auto, 0, auto);
+        @include rect(100%, 0.5rem);
+        @include background-color(#eee);
+        ul {
+          @include rect(100%, 100%);
+          @include flexbox();
+          a {
+            @include flex();
+            @include rect(auto, 100%);
+            @include flexbox();
+            @include justify-content();
+            @include align-items();
+            &.active {
+              @include color(rgba(255, 102, 136, 0.533));
+            }
+          }
+        }
+      }
+}

@@ -1,0 +1,157 @@
+@import '@/qunar/reset.scss';
+.careContainer{
+  @include background-color(#fff);
+  @include overflow(hidden);
+  @include rect(100%, 100%);
+  @include flexbox();
+  @include flex-direction(column);
+  .header{
+    position: relative;
+    @include background-color(rgba(243, 236, 236, 0.541));
+    // @include setRgba(255, 255, 255, 0);
+    @include rect(100%, 0.44rem);
+    // @include fullscreen(1,fixed);
+    // @include setposition(0, auto, auto, auto);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include text-align();
+    .left{
+      position: absolute;
+      left: 2%;
+      @include border-radius(50%);
+      @include rect(0.4rem, 90%);
+      // @include flex();
+      @include overflow(hidden);
+      img{
+        @include rect(auto, 100%);
+      }
+    }
+    .right{
+      @include flex();
+      // @include margin(0.08rem 0 0 0);   
+      a{
+        @include font-size(0.16rem);
+        @include color(rgb(122, 117, 117));
+        @include padding(0 0.1rem);
+        &.active {
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+  .careContent{
+    @include flex();
+    @include rect(100%, 100%);
+    @include overflow(hidden);
+    .caretop{
+      @include rect(100%, auto);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include margin(0 0 0.1rem 0);
+      form.am-search{
+        @include rect(70%, auto);
+        @include padding(0);
+        @include background-color(#fff);
+        .am-search-input{
+          @include background-color(rgba(243, 236, 236, 0.541));
+          @include border-radius(0.2rem);
+          // @include rect(100%, 0.3rem);
+          @include text-align();
+          .am-search-synthetic-ph{
+            @include text-align();
+          }
+        }
+      }
+    }
+    ul.cen{
+      @include padding(0 2%);
+      @include rect(100%, 90%);
+      @include overflow();
+      li.li{
+        display: block;
+        @include padding(0.08rem 0.08rem);
+        @include margin(0 0 0.16rem 0);
+        @include border-radius(0.1rem 0.1rem 0 0);
+        @include rect(100%, auto);
+        @include background-color(rgba(243, 236, 236, 0.541));
+        a.out{
+          display: block;
+          @include rect(100%, 2rem);
+          @include padding(0 0.2rem);
+          @include text-align();
+          @include background-color(#fff);
+          img{
+            @include rect(2rem, 2rem);
+          }
+        }
+        p{
+          @include font-size(0.16rem);
+          @include color(rgb(122, 117, 117));
+          @include padding(0.1rem 0 0.08rem 0.12rem);
+        }
+        div.bott{
+          @include padding(0 0.12rem 0.08rem 0.12rem);
+          @include rect(100%, 0.42rem);
+          @include flexbox();
+          div.left{
+            @include rect(60%, 0.3rem);
+            @include flexbox();
+            // @include border-radius(50%);
+            // @include overflow(hidden);
+            img{
+              @include rect(0.3rem, 0.3rem);
+              @include border-radius(50%);
+            }
+            p{
+              @include font-size(0.14rem);
+              @include line-height(200%);
+              @include color(rgb(122, 117, 117));
+              @include padding(0.06rem 0 0 0);
+              @include margin(0 0 0 0.1rem);
+              @include rect(100%, auto);
+              @include setText-overflow();
+            }      
+          }
+          div.right{
+            @include text-align(right);
+            @include flex();
+            @include margin(0.08rem 0 0 0);   
+            span{
+              @include font-size(0.16rem);
+              @include color(rgb(122, 117, 117));
+              @include padding(0.05rem 0.1rem);
+            }
+            span:nth-child(2){
+              @include padding(0.05rem 0.1rem);
+            }     
+            span.active{
+              @include color(rgba(255, 102, 136, 0.533));
+            }  
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    // @include fullscreen(2, fixed);
+    // @include setposition(auto, auto, 0, auto);
+    @include rect(100%, 0.5rem);
+    @include background-color(#eee);
+    ul {
+      @include rect(100%, 100%);
+      @include flexbox();
+      a {
+        @include flex();
+        @include rect(auto, 100%);
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+        &.active {
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+}

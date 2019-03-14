@@ -1,0 +1,101 @@
+@import '@/qunar/reset.scss';
+
+.msgContainer{
+  @include flexbox();
+  @include rect(100%, 100%);
+  @include flex-direction(column);
+  .header{
+    @include rect(100%, 0.44rem);
+    @include background-color(rgba(255, 102, 136, 0.533));
+    @include flexbox();
+    @include justify-content(space-between);
+    // @include align-items();
+    @include padding(0.1rem 0.2rem);
+    @include border-radius(0 0 0.04rem 0.04rem);
+    span{
+      @include text-align();
+      @include color(#fff);
+      @include font-size(0.2rem);
+    }
+    // span:nth-child(1){
+    //   @include flex(1);
+    //   @include text-align(left);
+    //   @include margin(0 0 0 0.1rem);
+    // }
+    span:nth-child(2){
+      @include font-size(0.18rem);
+
+    }
+    // span:nth-child(3){
+    //   @include flex(1);
+    // }
+  }
+  .content{
+    @include flex();
+    @include rect(100%, auto);
+    @include background-color(rgba(243, 236, 236, 0.541));
+    ul{
+      @include padding(0.2rem 0);
+      li{
+        @include padding(0.12rem 0.1rem);
+        @include background-color(rgba(255, 255, 255, 0.815));
+        @include border(1px 0 0 0, #ccc, solid);
+        @include flexbox();
+        // @include justify-content(space-between);
+        @include align-items();
+        span:nth-child(1){
+          @include flex(1)
+        }
+        span:nth-child(2){
+          @include flex(14)
+        }
+        span:nth-child(3){
+          @include flex(1)
+        }
+      }
+    }
+    h3{
+      @include font-weight(500);
+      @include padding(0.12rem 0.1rem);
+      @include background-color(rgba(255, 255, 255, 0.815));
+      @include border(1px 0 0 0, #ccc, solid);
+      @include flexbox();
+      // @include justify-content(space-between);
+      @include align-items();
+      span:nth-child(1){
+        @include flex(1)
+      }
+      span:nth-child(2){
+        @include flex(14)
+      }
+      span:nth-child(3){
+        @include flex(1)
+      }
+    }
+  }
+  .bbottom{
+    position: fixed;
+    z-index:10;
+    transition: .2s all;
+    bottom:-1.86rem;
+    @include rect(100%, auto);
+    @include text-align();
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include flex-direction(column);
+    @include font-size(0.16rem);
+    @include background-color(#fff);
+    a{
+        @include color(rgb(117, 110, 110));
+        @include rect(100%, auto);
+        @include padding(0.16rem);
+        @include border(0 0 2px 0, rgb(172, 165, 165), solid);
+    }
+    li{
+        @include color(#ccc);
+        @include color(rgb(117, 110, 110));
+        @include padding(0.16rem);
+    }
+  }
+}

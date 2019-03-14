@@ -1,0 +1,210 @@
+@import '@/qunar/reset.scss';
+
+.login{
+    @include rect(100%, 100%);
+    @include background-color(rgba(243, 236, 236, 0.541));
+    @include padding(0.1rem 0.2rem);
+    .ttop{
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items();
+        @include padding(0 0.1rem);
+        @include rect(auto, 0.44rem);
+        span{
+            @include font-size(0.18rem);
+        }
+    }
+    .txt1{
+        @include font-size(0.24rem);
+        @include text-align();
+        @include margin(0.4rem 0 0.4rem 0);
+    }
+
+    // .codeError{
+    //     position: absolute;
+    //     left: 1.22rem;
+    //     top: 1.30rem;
+    //     width: 1.86rem;
+    //     height: .28rem;
+    //     border-radius: 1.20rem;
+    //     background-color: rgba(227, 222, 222, 1);
+    //     color: rgba(136, 136, 136, 1);
+    //     font-size: .14rem;
+    //     text-align: center;
+    //     font-family: Microsoft Yahei;
+    //     border: .01rem solid rgba(255, 255, 255, 0);
+
+    .username{
+        @include background-color(rgba(243, 236, 236, 0));
+        input{
+            @include text-align();
+        }
+        @include border(0 0 2px 0, rgb(133, 130, 130), solid);
+        @include margin(0.1rem 0.4rem);
+        // position: absolute;
+        // left: .43rem;
+        // top: 1.5rem;
+        // width: 3.32rem;
+        // height: .4rem;
+        // background-color: rgba(255, 255, 255, 0);
+        // color: rgba(136, 136, 136, 1);
+        // font-size: .18rem;
+        // text-align: left;
+        // font-family: Microsoft Yahei;
+        // border: .01rem solid rgba(255, 255, 255, 0);
+
+    }
+    .border2{
+        @include rect(100%, rect);
+        @include padding(0 0.46rem);
+    }
+    
+    .password{
+        @include background-color(rgba(243, 236, 236, 0));
+        input{
+            @include text-align();
+        }
+        @include border(0 0 2px 0, rgb(133, 130, 130), solid);
+        @include margin(0.1rem 0.4rem);
+        // position: absolute;
+        // left: .43rem;
+        // top: 2.07rem;
+        // width: 3.32rem;
+        // height: .40rem;
+        // background-color: rgba(255, 255, 255, 0);
+        // color: rgba(136, 136, 136, 1);
+        // font-size: .18rem;
+        // text-align: left;
+        // font-family: Microsoft Yahei;
+        // border: .01rem solid rgba(255, 255, 255, 0);
+
+    }
+    
+    // .border2{
+    //     position: absolute;
+    //     left: .43rem;
+    //     top: 2.47rem;
+    //     width: 3.25rem;
+    //     height: .01rem;
+    //     border: .01rem solid rgba(187, 187, 187, 1);
+
+    // }
+    .loginBtn{
+        @include margin(0.3rem 0.4rem);
+    }
+    .aside{
+        @include flexbox();
+        @include justify-content(space-between);
+        a{
+            @include color(rgb(105, 103, 103));
+            @include padding(0 0.2rem 0.2rem 0.2rem);
+        }
+    }
+    .aside1{
+        @include flexbox();
+        @include justify-content();
+        a{
+            @include color(rgb(105, 103, 103));
+            @include padding(0 0.2rem 0.2rem 0.2rem);
+        }
+    }
+    // .forgitWord{
+    //     position: absolute;
+    //     left: .28rem;
+    //     top: 3.34rem;
+    //     width: .80rem;
+    //     height: .30rem;
+    //     border-radius: .4rem;
+    //     background-color: rgba(255, 255, 255, 0);
+    //     color: rgba(166, 161, 161, 1);
+    //     font-size: .14rem;
+    //     text-align: center;
+    //     font-family: Microsoft Yahei;
+    //     border: .01rem solid rgba(255, 255, 255, 0);
+
+    // }
+    // .codeLogin{
+    //     position: absolute;
+    //     left: 2.75rem;
+    //     top: 3.34rem;
+    //     width: 1.25rem;
+    //     height: .30rem;
+    //     border-radius: .04rem;
+    //     background-color: rgba(255, 255, 255, 0);
+    //     color: rgba(166, 161, 161, 1);
+    //     font-size: .14rem;
+    //     text-align: center;
+    //     font-family: Microsoft Yahei;
+    //     border: .01rem solid rgba(255, 255, 255, 0);
+
+    // }
+    .thirdLogin{
+        @include text-align();
+        @include margin(1.2rem 0 0.2rem 0);
+    }
+    .tologin{
+        @include flexbox();
+        @include justify-content();
+        a{
+            @include flex();
+            @include text-align();
+            @include flexbox();
+            @include flex-direction(column);
+            @include font-size(0.16rem);
+            @include color(rgba(255, 102, 136, 0.533));
+        }
+        span:nth-child(1){
+            @include font-size(0.24rem);
+        }
+    }
+    // .wcLogin{
+    //     position: absolute;
+    //     left: .40rem;
+    //     top: 6.60rem;
+    //     width: .80rem;
+    //     height: .30rem;
+    //     line-height: .30rem;
+    //     border-radius: .04rem;
+    //     background-color: rgba(244, 244, 244, 1);
+    //     color: rgba(166, 161, 161, 1);
+    //     font-size: .14rem;
+    //     text-align: center;
+    //     font-family: Microsoft Yahei;
+    //     border: .01rem solid rgba(255, 255, 255, 0);
+
+
+    // }
+    // .qqLogin{
+    //     position: absolute;
+    //     left: 1.67rem;
+    //     top: 6.60rem;
+    //     width: .80rem;
+    //     height: .30rem;
+    //     line-height: .30rem;
+    //     border-radius: .04rem;
+    //     background-color: rgba(244, 244, 244, 1);
+    //     color: rgba(166, 161, 161, 1);
+    //     font-size: .14rem;
+    //     text-align: center;
+    //     font-family: Arial;
+    //     border: .01rem solid rgba(255, 255, 255, 0);
+        
+    // }
+    // .mbLogin{
+    //     position: absolute;
+    //     left: 2.94rem;
+    //     top: 6.60rem;
+    //     width: .80rem;
+    //     height: .30rem;
+    //     line-height: .30rem;
+    //     border-radius: .04rem;
+    //     background-color: rgba(244, 244, 244, 1);
+    //     color: rgba(166, 161, 161, 1);
+    //     font-size: .14rem;
+    //     text-align: center;
+    //     font-family: Microsoft Yahei;
+    //     border: .01rem solid rgba(255, 255, 255, 0);
+        
+    // }
+    
+}

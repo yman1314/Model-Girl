@@ -1,0 +1,37 @@
+@import '@/qunar/reset.scss';
+
+.mota{
+  @include rect(100%, 100%);
+  display: none;
+  @include fullscreen(6, absolute);
+  @include background-color(rgba(8, 8, 8, 0.609));
+  .oout{
+    @include padding(0.2rem 0 0 0);
+    @include rect(70%, 1rem);
+    @include fullscreen(7, absolute);
+    @include background-color(#fff);
+    @include text-align();
+    @include border-radius(0.1rem);
+    top: 50%;
+    left: 15%;
+    // @include margin(0);
+    b{
+      @include padding(0.05rem 0.3rem);
+      @include background-color(#f688);
+      @include border-radius(0.1rem);
+      @include color(#FFF);
+    }
+    div.bott{
+      @include flexbox();
+      @include margin(0.2rem 0 0 0);
+      @include justify-content();
+      @include border(1px 0 0 0,#ccc,solid);
+      span{
+        @include padding(0.08rem 0.3rem);
+      }
+      span:nth-child(1){
+        @include border(1px 1px 0 0,#ccc,solid);
+      }
+    }
+  }
+}

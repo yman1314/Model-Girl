@@ -1,0 +1,141 @@
+@import '@/qunar/reset.scss';
+@import '@/qunar/public.scss';
+
+div.wai{
+  @include rect(100%, 100%);
+.newsContainer{
+  @include background-color(#fff);
+  @include overflow(hidden);
+  @include rect(100%, 100%);
+  @include flexbox();
+  @include flex-direction(column);
+  .header{
+    position: relative;
+    @include background-color(rgba(243, 236, 236, 0.541));
+    @include rect(100%, 0.44rem);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include margin(0 0 0.3rem 0);
+    // @include text-align();
+    span{
+      position: absolute;
+      left: 2%;
+      @include font-size(0.16rem);
+    }
+    .top{
+      // @include flex();
+      // @include margin(0.08rem 0 0 0);   
+      a{
+        @include font-size(0.16rem);
+        @include color(rgb(122, 117, 117));
+        @include padding(0 0.1rem);
+        &.active {
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+  .newsContent{
+    @include flex();
+    @include rect(100%, 100%);
+    @include overflow();
+    @include padding(0 2%);
+    .ctop{
+      @include rect(100%, auto);
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items();
+      @include margin(0 0 0.1rem 0);
+      @include padding(0 0.26rem);
+      p:nth-child(1){
+        img{
+          @include rect(0.4rem, 0.4rem);
+          @include border-radius(50%);
+        }
+        span{
+          vertical-align: bottom;
+          @include font-size(0.14rem);
+          @include padding(0.1rem 0.2rem);
+        }
+      }
+      p:nth-child(2){
+        span{
+          @include color(#000);
+          vertical-align: bottom;
+          @include padding(0 0.06rem);
+          @include font-size(0.18rem);
+        }
+      }
+    }
+    .ccen{
+      // @include padding(2%);
+      @include border(0.1rem, rgba(243, 236, 236, 0.541), solid);
+      @include border-radius(0.08rem 0.08rem 0 0);
+      @include text-align();
+      .oout{
+        @include rect(100%, 2.6rem);
+        @include overflow(hidden);
+        video{
+          @include rect(auto, 2.5rem);
+          @include padding(2% 0 0 0);
+        }
+      }
+    }
+    h3{
+      @include font-size(0.16rem);
+      @include padding(4% 2%);
+      @include background-color(rgba(243, 236, 236, 0.541));
+    }
+    .cbott{
+      @include padding(0 0.2rem 0.12rem 0.2rem);
+      @include font-size(0.16rem);
+      @include flexbox();
+      @include justify-content(space-between);
+      @include background-color(rgba(243, 236, 236, 0.541));
+      @include align-items();
+      @include color(#000);
+      div.lt{
+        @include background-color(rgba(255, 102, 136, 0.533));
+        @include border-radius(0.06rem);
+        span{
+          @include color(#fff);
+          @include padding(0.05rem 0.1rem);
+        }
+      }
+      div.rt{
+        span{
+          @include padding(0 0.1rem);
+          @include font-size(0.2rem);
+        }
+        span.active{
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+  .footer {
+    // @include fullscreen(2, fixed);
+    // @include setposition(auto, auto, 0, auto);
+    @include rect(100%, 0.5rem);
+    @include background-color(#eee);
+    ul {
+      @include rect(100%, 100%);
+      @include flexbox();
+      a {
+        @include flex();
+        @include rect(auto, 100%);
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+        &.active {
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+  span#active{
+    @include color(rgba(255, 102, 136, 0.533));
+  }
+}
+}

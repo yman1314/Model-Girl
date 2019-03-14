@@ -1,0 +1,193 @@
+@import '@/qunar/reset.scss';
+.cartContainer{
+  @include flexbox();
+  @include rect(100%, 100%);
+  @include flex-direction(column);
+  .header{
+    @include rect(100%, 2rem);
+    @include background-color(rgba(255, 102, 136, 0.533));
+    div.top{
+      @include flexbox();
+      @include justify-content(space-between);
+      // @include align-items();
+      @include padding(0.1rem 0.1rem);
+      @include border-radius(0 0 0.04rem 0.04rem);
+      span{
+        @include text-align();
+        @include color(#fff);
+        @include font-size(0.16rem);
+      }
+      // span:nth-child(1){
+      //   @include flex(1);
+      //   @include text-align(left);
+      //   @include margin(0 0 0 0.1rem);
+      // }
+      span:nth-child(2){
+        @include font-size(0.18rem);
+
+      }
+      // span:nth-child(3){
+      //   @include flex(1);
+      // }
+    }
+    div.bott{
+      @include text-align(left);
+      @include color(#fff);
+      @include font-size(0.18rem);
+      @include margin(0.1rem 0 0 0.3rem);
+    }
+  }
+  .tcontent{
+    @include flex();
+    @include rect(100%, 70%);
+    @include overflow();
+    // @include background-color(#eee);
+    @include fullscreen(2, fixed);
+    top:1rem;
+    div.out{
+      @include padding(0 0.2rem);
+      // @include fullscreen(2, relative);
+      @include rect(100%, auto);
+      // @include margin(0 0 0.8rem 0);
+      // @include overflow();
+      ul.out{
+        @include border-radius(0.08rem 0.08rem 0 0);
+        @include background-color(#fff);
+        @include padding(0.1rem);
+        @include margin(0 0 0.2rem 0);
+        li.out{
+          @include text-align(left);
+          input.out{
+            @include margin(0 0.1rem 0 0.08rem);
+          }
+          span.out{
+            @include font-size(0.2rem);
+            @include margin(0 0 0 0.08rem);
+          }
+          ul.in{
+            // @include border(1px 0 0 0, #eee, solid);
+            @include margin(0.05rem 0 0 0);
+            @include padding(0.1rem 0 0 0);
+            li.in{
+              @include flexbox();
+              @include justify-content();
+              @include align-items();
+              @include border(1px 0 0 0, #eee, solid);
+              @include margin(0.05rem 0 0 0);
+              @include padding(0.1rem 0 0.05rem 0);
+              .int{
+                @include flex(1);
+                @include margin(0 0.1rem 0 0);
+              }
+              img{
+                // @include flex(5);
+                @include rect(1rem, 1rem);
+                @include margin(0 0.1rem 0 0);
+              }
+              div.left{
+                @include flex(8);
+                @include margin(0 0 0 0.1rem);
+                h3{
+                  @include padding(0.05rem 0 0.05rem 0);
+                  @include font-size(0.14rem);
+                }
+                .all{
+                  @include rect(100%, 0.24rem);
+                  button{
+                    float: left;
+                    @include rect(0.20rem, 0.2rem);
+                    @include background-color(rgba(243, 236, 236, 0.541));
+                    border: 0;
+                    border: 1px solid #ccc;            
+                  }
+                  .lt{
+                    @include border-radius(0.08rem 0 0 0.08rem);
+                  }
+                  .rt{
+                    @include border-radius(0 0.08rem 0.08rem 0);
+                  }
+                  .ce{
+                    float: left;
+                    @include rect(16%, auto);
+                    @include text-align();
+                    @include line-height(0.18rem);
+                    border: 0;
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                  }
+                }
+                p{
+                  @include font-size(0.16rem);
+                  @include padding(0.05rem 0 0 0);
+                  @include color(rgba(255, 102, 136, 0.533));
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    div.bottom{
+      @include fullscreen(999, fixed);
+      @include setposition(auto, auto, 0.5rem, auto);
+      @include rect(100%, 0.5rem);
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items();
+      @include background-color(rgb(243, 236, 236));
+      @include padding(0 0 0 0.26rem);
+      div.bleft{
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items();  
+        input.bott{
+          @include margin(0 0.1rem 0 0);
+        }
+      }
+      div.bright{
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+        span{
+          @include font-size(0.16rem);
+          @include margin(0 0.2rem 0 0);
+        }
+        b{
+          @include font-size(0.16rem);
+          @include padding(0 0.4rem);
+          line-height: 0.5rem;
+          @include color(#FFf);
+          @include background-color(rgba(255, 102, 136, 0.533));
+        }
+        i{
+          @include font-size(0.16rem);
+          @include padding(0 0.4rem);
+          line-height: 0.5rem;
+          @include color(#FFf);
+          @include background-color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+  .tfooter{
+    @include fullscreen(2, fixed);
+    @include setposition(auto, auto, 0, auto);
+    @include rect(100%, 0.5rem);
+    @include background-color(rgba(255, 102, 136, 0.533));
+    ul {
+      @include rect(100%, 100%);
+      @include flexbox();
+      a {
+        @include flex();
+        @include rect(auto, 100%);
+        @include flexbox();
+        @include justify-content();
+        @include color(#fff);
+        @include align-items();
+        &.active {
+          @include color(rgba(255, 102, 136, 0.533));
+        }
+      }
+    }
+  }
+}

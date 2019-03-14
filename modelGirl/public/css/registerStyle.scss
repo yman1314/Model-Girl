@@ -1,0 +1,121 @@
+@import '@/qunar/reset.scss';
+
+.register{
+    @include rect(100%, 100%);
+    @include background-color(rgba(243, 236, 236, 0.541));
+    @include padding(0.1rem 0.2rem);
+    .ttop{
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items();
+        @include padding(0 0.1rem);
+        @include rect(auto, 0.44rem);
+        span{
+            @include font-size(0.18rem);
+        }
+    }
+    .txt1{
+        @include font-size(0.24rem);
+        @include text-align();
+        @include margin(0.4rem 0 0.4rem 0);
+    }
+    // .codeError{
+    //     position: absolute;
+    //     left: 1.22rem;
+    //     top: 1.30rem;
+    //     width: 1.86rem;
+    //     height: .28rem;
+    //     border-radius: 1.20rem;
+    //     background-color: rgba(227, 222, 222, 1);
+    //     color: rgba(136, 136, 136, 1);
+    //     font-size: .14rem;
+    //     text-align: center;
+    //     font-family: Microsoft Yahei;
+    //     border: .01rem solid rgba(255, 255, 255, 0);
+
+    // }
+    .username{
+        @include background-color(rgba(243, 236, 236, 0));
+        input{
+            @include text-align();
+        }
+        @include border(0 0 2px 0, rgb(133, 130, 130), solid);
+        @include margin(0.1rem 0.4rem);
+    }
+    // .border1{
+    //     position: absolute;
+    //     left: .43rem;
+    //     top: 1.90rem;
+    //     width: 3.25rem;
+    //     height: .01rem;
+    //     border: .01rem solid rgba(187, 187, 187, 1);
+
+    // }
+    .getCode{
+        @include flexbox();
+        @include justify-content();
+        @include padding(0.1rem 0);
+        @include margin(0.1rem 0.4rem);
+        @include border(0 0 2px 0, rgb(133, 130, 130), solid);
+        // input{
+            //     @include text-align();
+            // }
+            // 
+            // @include margin(0.1rem 0.4rem);
+            .code{
+                // @include margin(0.1rem 0);
+                @include background-color(rgba(243, 236, 236, 0));
+                border: none;
+                @include text-align();
+            }
+        }
+        .sendCode{
+            @include color(#000);
+            @include border(1px, rgba(255, 102, 136, 0.533), solid);
+            span{
+                @include color(#000);
+            }
+            
+        }
+
+    // }
+    
+    
+    // .border2{
+    //     position: absolute;
+    //     left: .43rem;
+    //     top: 2.47rem;
+    //     width: 3.25rem;
+    //     height: .01rem;
+    //     border: .01rem solid rgba(187, 187, 187, 1);
+
+    // }
+    .password{
+        @include background-color(rgba(243, 236, 236, 0));
+        input{
+            @include text-align();
+        }
+        @include border(0 0 2px 0, rgb(133, 130, 130), solid);
+        @include margin(0.1rem 0.4rem);
+    }
+    // .border3{
+    //     position: absolute;
+    //     left: .43rem;
+    //     top: 3.04rem;
+    //     width: 3.25rem;
+    //     height: .01rem;
+    //     border: .01rem solid rgba(187, 187, 187, 1);
+
+    // }
+    .registerBtn{
+        @include margin(0.3rem 0.4rem);
+
+    }
+    
+    .goLogin{
+        @include text-align();
+        @include margin(0.4rem 0 0.2rem 0);
+        @include font-size(0.16rem);
+
+    }
+} 
